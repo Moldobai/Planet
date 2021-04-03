@@ -1,0 +1,359 @@
+@charset "utf-8";
+
+/* css Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+}
+
+#fullpage {
+    height: 100vh;
+}
+
+#fullpage section {
+    height: 100vh;
+    overflow: hidden;
+}
+
+#fullpage section:nth-child(1) {
+    background-image: url("../image/main5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+#fullpage section:nth-child(2) {
+    background-color: #101113;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 50px;
+}
+
+.logo {
+    font-family: 'Fontdiner Swanky', cursive;
+    font-size: 25px;
+    color: #FFFFFF;
+}
+
+.r-menu a {
+    font-family: Calibri;
+    color: #FFFFFF;
+    font-size: 14px;
+    margin: 0px 20px;
+    letter-spacing: 1px;
+}
+
+.r-menu button {
+    font-family: Calibri;
+    color: #000000;
+    width: 90px;
+    height: 35px;
+    border-radius: 10px 25px;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    background-color: #fff;
+}
+
+button:active {
+    transform: scale(1.1);
+}
+
+/*  TEXT */
+.text {
+    position: absolute;
+    left: 52%;
+    top: 52%;
+    transform: translate(-52%, -52%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.earth span {
+    font-family: Calibri;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 3px 8px;
+    margin: 2px;
+    background-color: #FFFFFF;
+    color: #476e9a;
+    border-radius: 10px 20px;
+}
+
+.text h1 {
+    font-family: Calibri;
+    font-size: 70px;
+    color: #FFFFFF;
+    letter-spacing: 30px;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 200;
+
+}
+
+.text button {
+    width: 120px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    font-size: 12px;
+    font-family: Calibri;
+    margin-top: 20px;
+    color: #FFFFFF;
+    font-weight: 700;
+    border-radius: 10px 25px;
+}
+
+.text button:hover {
+    background-color: #FFFFFF;
+    color: #000;
+    border: none;
+    transition: all ease 0.5s;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* social */
+
+.social {
+    position: absolute;
+    left: 52%;
+    bottom: 25px;
+    transform: translate(-50%);
+    text-align: center;
+}
+
+.social p {
+    font-family: Calibri;
+    color: #e3e8eb;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.social-icons a {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #d3d7e1;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    margin: 0px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons i {
+    color: #9e3d9e;
+    font-size: 16px;
+
+}
+
+.social-icons a:hover i {
+    color: #ebe9e9;
+}
+
+.social-icons a:hover {
+    background-color: #171717;
+}
+
+/*  section 2---------- */
+.explore-h h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 28px;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 10% 0px 0px 0px;
+    letter-spacing: 7px;
+}
+
+.explore-h p {
+    color: #c7c7c7;
+    font-family: Calibri;
+    letter-spacing: 1px;
+    width: 70%;
+    font-size: 13px;
+    text-align: center;
+}
+
+.explore-h {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BOX */
+.box-1,
+.box-2,
+.box-3,
+.box-4 {
+    width: 250px;
+    height: 320px;
+    background-color: #1a1a1a;
+    margin: 10px;
+    border-radius: 10px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.box-container {
+    display: flex;
+    justify-content: center;
+}
+
+.box-1 p,
+.box-2 p,
+.box-3 p,
+.box-4 p {
+    position: absolute;
+    bottom: 0px;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-family: Calibri;
+    letter-spacing: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.box-1 {
+    background-image: url('../image/1.png');
+}
+
+.box-2 {
+    background-image: url('../image/2.png');
+}
+
+.box-3 {
+    background-image: url('../image/3.png');
+}
+
+.box-4 {
+    background-image: url('../image/4.jpg');
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    align-items: center;
+    padding: 20px;
+}
+
+.copyright {
+    font-family: Calibri;
+    font-size: 13px;
+    color: #c7c4c4;
+    border-right: 1px solid #FFFFFF;
+    padding-right: 20px;
+    letter-spacing: 1px;
+}
+
+footer ul {
+    display: flex;
+    margin: 0px 0px 0px 10px;
+    padding: 0px;
+}
+
+footer ul li a {
+    padding: 10px 20px;
+    color: #FFFFFF;
+    font-family: Calibri;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    border-radius: 10px 20px;
+}
+
+footer ul li a:hover {
+    background-color: #FFFFFF;
+    color: #171717;
+    transition: all ease 0.5s;
+
+}
+
+
+
+
+@media(max-width:1110px) {
+    .lSAction>a {
+        display: block !important;
+    }
+
+    .box-container {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/*    ----------+++++ */
+@media (max-width:780px) {
+    nav {
+        padding: 15px 20px;
+    }
+
+    .r-menu a {
+        display: none;
+    }
+
+    .text h1 {
+        font-size: 50px;
+        letter-spacing: 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        width: 100%;
+        padding: 20px 0px;
+    }
+
+    .copyright {
+        border: none;
+        border-bottom: 1px solid #FFFFFF;
+        padding: 5px 2px;
+        margin: 5px 5px 20px 5px;
+
+    }
+
+    footer ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

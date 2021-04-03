@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet WebSITE</title>
+    <link rel="shortcut icon " href="image/brand.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/Jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.fullpage.js"></script>
+    <!-- slider -->
+    <link rel="stylesheet" type="text/css" href="css/lightslider.css">
+    <script type="text/javascript" src="js/lightslider.js"></script>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div id="fullpage">
+        <!-- section  1-->
+        <section>
+            <!-- navigation -->
+            <nav>
+                <!-- logo -->
+                <div class="logo">GT-Internet </div>
+                <!-- right menu -->
+                <div class="r-menu">
+                    <!-- website design -->
+                    <a href="#">Website Designs</a>
+                    <!-- button -->
+                    <button>Sign In</button>
+                </div>
+            </nav>
+            <!-- text--------------- -->
+            <div class="text">
+                <!-- earth -->
+                <div class="earth">
+                    <span>E</span>
+                    <span>A</span>
+                    <span>R</span>
+                    <span>T</span>
+                    <span>H</span>
+                </div>
+                <!-- pLANET HEADING -->
+                <h1>PLANET</h1>
+                <button>READ MORE</button>
+
+            </div>
+            <!-- social -->
+            <div class="social">
+                <!-- paragtaph -->
+                <p> Follow Me and Stay Connect Us</p>
+                <!-- icons -->
+                <div class="social-icons">
+                    <a href="#"><i class="fa fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- section  1-->
+        <section>
+            <!-- heading -->
+            <div class="explore-h">
+                <h1>Explore The World</h1>
+                <!-- paragr -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, in impedit? Voluptas deleniti
+                    expedita atque?</p>
+            </div>
+            <!-- box-container -->
+            <div class="box-container">
+                <ul id="autoWidth" class="cs-hidden">
+                    <li class="item-a">
+                        <!-- box   1 -->
+                        <div class="box-1">
+                            <p>LANDSPASE</p>
+                        </div>
+                    </li>
+                    <li class="item-b">
+                        <!-- box   2 -->
+                        <div class="box-2">
+                            <p>LANDSPASE</p>
+                        </div>
+                    </li>
+                    <li class="item-c">
+                        <!-- box   3 -->
+                        <div class="box-3">
+                            <p>LANDSPASE</p>
+                        </div>
+                    </li>
+                    <li class="item-d">
+                        <!-- box   4-->
+                        <div class="box-4">
+                            <p>LANDSPASE</p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- footer -->
+            <footer>
+                <!-- copyright -->
+                <div class="copyright">CopyRught Going To Internet 2021</div>
+                <!-- Menu -->
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </footer>
+        </section>
+    </div>
+    <script type="text/javascript">
+        // scroll scrip
+
+        $('#fullpage').fullpage();
+
+        // slider
+        $(document).ready(function () {
+            $('#autoWidth').lightSlider({
+                autoWidth: true,
+                loop: true,
+                onSliderLoad: function () {
+                    $('#autoWidth').removeClass('cS-hidden');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
